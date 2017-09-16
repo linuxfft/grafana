@@ -3,8 +3,8 @@ package influxdb
 import (
 	"strconv"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/components/simplejson"
+	"github.com/masami10/grafana/pkg/models"
 )
 
 type InfluxdbQueryParser struct{}

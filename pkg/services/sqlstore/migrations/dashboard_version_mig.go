@@ -1,6 +1,6 @@
 package migrations
 
-import . "github.com/grafana/grafana/pkg/services/sqlstore/migrator"
+import . "github.com/masami10/grafana/pkg/services/sqlstore/migrator"
 
 func addDashboardVersionMigration(mg *Migrator) {
 	dashboardVersionV1 := Table{

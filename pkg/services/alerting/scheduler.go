@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/log"
+	"github.com/masami10/grafana/pkg/models"
 )
 
 type SchedulerImpl struct {

@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/grafana/grafana/pkg/log"
+	"github.com/masami10/grafana/pkg/log"
 	"golang.org/x/sync/errgroup"
 )
 

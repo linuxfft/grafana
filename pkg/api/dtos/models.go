@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/masami10/grafana/pkg/components/simplejson"
+	m "github.com/masami10/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/setting"
 )
 
 type AnyId struct {

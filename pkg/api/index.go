@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/masami10/grafana/pkg/api/dtos"
+	"github.com/masami10/grafana/pkg/bus"
+	"github.com/masami10/grafana/pkg/middleware"
+	m "github.com/masami10/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/plugins"
+	"github.com/masami10/grafana/pkg/setting"
 )
 
 func setIndexViewData(c *middleware.Context) (*dtos.IndexViewData, error) {

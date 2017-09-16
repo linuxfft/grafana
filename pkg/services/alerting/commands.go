@@ -1,8 +1,8 @@
 package alerting
 
 import (
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/bus"
+	m "github.com/masami10/grafana/pkg/models"
 )
 
 type UpdateDashboardAlertsCommand struct {

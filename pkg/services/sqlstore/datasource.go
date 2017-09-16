@@ -3,10 +3,10 @@ package sqlstore
 import (
 	"time"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/securejsondata"
-	"github.com/grafana/grafana/pkg/metrics"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/bus"
+	"github.com/masami10/grafana/pkg/components/securejsondata"
+	"github.com/masami10/grafana/pkg/metrics"
+	m "github.com/masami10/grafana/pkg/models"
 )
 
 func init() {

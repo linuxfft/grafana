@@ -15,13 +15,13 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/grafana/grafana/pkg/api/cloudwatch"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/masami10/grafana/pkg/api/cloudwatch"
+	"github.com/masami10/grafana/pkg/log"
+	"github.com/masami10/grafana/pkg/middleware"
+	m "github.com/masami10/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/plugins"
+	"github.com/masami10/grafana/pkg/setting"
+	"github.com/masami10/grafana/pkg/util"
 )
 
 var (

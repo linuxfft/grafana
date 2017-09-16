@@ -1,8 +1,8 @@
 package plugins
 
 import (
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/bus"
+	m "github.com/masami10/grafana/pkg/models"
 )
 
 func GetPluginSettings(orgId int64) (map[string]*m.PluginSettingInfoDTO, error) {

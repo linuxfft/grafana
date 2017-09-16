@@ -3,8 +3,8 @@ package commands
 import (
 	"errors"
 	"fmt"
-	m "github.com/grafana/grafana/pkg/cmd/grafana-cli/models"
-	services "github.com/grafana/grafana/pkg/cmd/grafana-cli/services"
+	m "github.com/masami10/grafana/pkg/cmd/grafana-cli/models"
+	services "github.com/masami10/grafana/pkg/cmd/grafana-cli/services"
 	"strings"
 )
 

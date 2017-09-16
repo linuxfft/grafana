@@ -7,11 +7,11 @@ import (
 
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/events"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/masami10/grafana/pkg/bus"
+	"github.com/masami10/grafana/pkg/events"
+	m "github.com/masami10/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/setting"
+	"github.com/masami10/grafana/pkg/util"
 )
 
 func init() {

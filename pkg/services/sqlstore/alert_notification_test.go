@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/components/simplejson"
+	m "github.com/masami10/grafana/pkg/models"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/masami10/grafana/pkg/log"
+	"github.com/masami10/grafana/pkg/models"
+	"github.com/masami10/grafana/pkg/setting"
+	"github.com/masami10/grafana/pkg/tsdb"
 )
 
 type InfluxDBExecutor struct {

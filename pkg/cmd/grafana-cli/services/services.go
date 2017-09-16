@@ -12,8 +12,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	m "github.com/grafana/grafana/pkg/cmd/grafana-cli/models"
+	"github.com/masami10/grafana/pkg/cmd/grafana-cli/logger"
+	m "github.com/masami10/grafana/pkg/cmd/grafana-cli/models"
 )
 
 var (

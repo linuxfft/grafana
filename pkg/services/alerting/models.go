@@ -1,6 +1,6 @@
 package alerting
 
-import "github.com/grafana/grafana/pkg/components/null"
+import "github.com/masami10/grafana/pkg/components/null"
 
 type Job struct {
 	Offset     int64
