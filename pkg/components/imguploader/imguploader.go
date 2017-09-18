@@ -52,6 +52,18 @@ func NewImageUploader() (ImageUploader, error) {
 		password := webdavSec.Key("password").String()
 
 		return NewWebdavImageUploader(url, username, password, public_url)
+	case "qiniu":
+		qiniuSec, err := setting.Cfg.GetSection("external_image_storage.qiniu")
+		if err != nil {
+			return nil, err
+		}
+		bucket := qiniuSec.Key("bucket").MustString("")
+		accessKey := qiniuSec.Key("access_key").MustString("")
+		secretKey := qiniuSec.Key("secret_key").MustString("")
+		publicDoamin := qiniuSec.Key("public_domain").MustString("")
+		zone := qiniuSec.Key("zone").MustString("")
+
+		return NewQiniuImageUploader(bucket, accessKey, secretKey, publicDoamin, zone)
 	}
 
 	return NopImageUploader{}, nil

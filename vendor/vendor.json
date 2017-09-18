@@ -551,6 +551,66 @@
 			"revisionTime": "2017-07-03T10:12:42Z"
 		},
 		{
+			"checksumSHA1": "mJsyHcduYX4pzhSpbZZzlQYjH5Q=",
+			"path": "github.com/qiniu/api.v7",
+			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
+			"revisionTime": "2017-08-30T07:57:44Z"
+		},
+		{
+			"checksumSHA1": "Jcaum05oC3ialPER3qRe7xW5l/w=",
+			"path": "github.com/qiniu/api.v7/auth/qbox",
+			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
+			"revisionTime": "2017-08-30T07:57:44Z"
+		},
+		{
+			"checksumSHA1": "cfTc4oH34GEd6CXeNSzekEPpN7o=",
+			"path": "github.com/qiniu/api.v7/cdn",
+			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
+			"revisionTime": "2017-08-30T07:57:44Z"
+		},
+		{
+			"checksumSHA1": "aDAPyuoYmwrEJ2VN7sfatTY+Myc=",
+			"path": "github.com/qiniu/api.v7/conf",
+			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
+			"revisionTime": "2017-08-30T07:57:44Z"
+		},
+		{
+			"checksumSHA1": "Nrhrx6hYKjp+/1b6W4hHh9+slck=",
+			"path": "github.com/qiniu/api.v7/storage",
+			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
+			"revisionTime": "2017-08-30T07:57:44Z"
+		},
+		{
+			"checksumSHA1": "beTNGx1rXgzHQQKZzLDl6WJPafg=",
+			"path": "github.com/qiniu/x/bytes.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "g5gqSqUO071V3ULvUGWT8uaFB8g=",
+			"path": "github.com/qiniu/x/bytes.v7/seekable",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "jQ+GU5c9c7b4Jq8gT1Oaa0Q9JUg=",
+			"path": "github.com/qiniu/x/ctype.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "H7jZDGNRIRPkKM2T6I5JjaqbTno=",
+			"path": "github.com/qiniu/x/rpc.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "OQVghp//ATup7BfCaB1BLjYTJb4=",
+			"path": "github.com/qiniu/x/xlog.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
 			"checksumSHA1": "iWCtyR1TkJ22Bi/ygzfKDvOQdQY=",
 			"path": "github.com/sergi/go-diff/diffmatchpatch",
 			"revision": "24e2351369ec4949b2ed0dc5c477afdd4c4034e8",
@@ -671,5 +731,5 @@
 			"revisionTime": "2017-02-13T09:12:08Z"
 		}
 	],
-	"rootPath": "github.com/grafana/grafana"
+	"rootPath": "github.com/masami10/grafana"
 }

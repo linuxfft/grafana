@@ -96,5 +96,32 @@ func TestImageUploaderFactory(t *testing.T) {
 			So(original.username, ShouldEqual, "username")
 			So(original.password, ShouldEqual, "password")
 		})
+
+    Convey("Qiniu uploader", func() {
+      var err error
+
+      setting.NewConfigContext(&setting.CommandLineArgs{
+        HomePath: "../../../",
+      })
+
+      setting.ImageUploadProvider = "qiniu"
+
+      qiniuSec, err := setting.Cfg.GetSection("external_image_storage.qiniu")
+      qiniuSec.NewKey("bucket", "grafana")
+      qiniuSec.NewKey("access_key", "access_key")
+      qiniuSec.NewKey("secret_key", "secret_key")
+      qiniuSec.NewKey("public_domain", "public_domain")
+      qiniuSec.NewKey("zone", "Huadong")
+
+      uploader, err := NewImageUploader()
+
+      So(err, ShouldBeNil)
+      original, ok := uploader.(*QiniuUploader)
+
+      So(ok, ShouldBeTrue)
+      So(original.bucket, ShouldEqual, "webdavUrl")
+      So(original.accessKey, ShouldEqual, "access_key")
+      So(original.secretKey, ShouldEqual, "secret_key")
+    })
 	})
 }
