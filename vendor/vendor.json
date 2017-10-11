@@ -553,32 +553,42 @@
 		{
 			"checksumSHA1": "mJsyHcduYX4pzhSpbZZzlQYjH5Q=",
 			"path": "github.com/qiniu/api.v7",
-			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
-			"revisionTime": "2017-08-30T07:57:44Z"
+			"revision": "0c661d0ca96771709f67b3d9eac10f27033b1f2a",
+			"revisionTime": "2017-09-25T09:20:37Z",
+			"version": "v7.2.3",
+			"versionExact": "v7.2.3"
 		},
 		{
-			"checksumSHA1": "Jcaum05oC3ialPER3qRe7xW5l/w=",
+			"checksumSHA1": "Ba/7hfojM9WTKs1vNPeHxm5hWdU=",
 			"path": "github.com/qiniu/api.v7/auth/qbox",
-			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
-			"revisionTime": "2017-08-30T07:57:44Z"
+			"revision": "0c661d0ca96771709f67b3d9eac10f27033b1f2a",
+			"revisionTime": "2017-09-25T09:20:37Z",
+			"version": "v7.2.3",
+			"versionExact": "v7.2.3"
 		},
 		{
 			"checksumSHA1": "cfTc4oH34GEd6CXeNSzekEPpN7o=",
 			"path": "github.com/qiniu/api.v7/cdn",
-			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
-			"revisionTime": "2017-08-30T07:57:44Z"
+			"revision": "0c661d0ca96771709f67b3d9eac10f27033b1f2a",
+			"revisionTime": "2017-09-25T09:20:37Z",
+			"version": "v7.2.3",
+			"versionExact": "v7.2.3"
 		},
 		{
-			"checksumSHA1": "aDAPyuoYmwrEJ2VN7sfatTY+Myc=",
+			"checksumSHA1": "vXOa2JbY9nHrzVQVWfaeKSHE4Ac=",
 			"path": "github.com/qiniu/api.v7/conf",
-			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
-			"revisionTime": "2017-08-30T07:57:44Z"
+			"revision": "0c661d0ca96771709f67b3d9eac10f27033b1f2a",
+			"revisionTime": "2017-09-25T09:20:37Z",
+			"version": "v7.2.3",
+			"versionExact": "v7.2.3"
 		},
 		{
-			"checksumSHA1": "Nrhrx6hYKjp+/1b6W4hHh9+slck=",
+			"checksumSHA1": "/W+YqsorcAQZVCP0FKs+HgOy8eM=",
 			"path": "github.com/qiniu/api.v7/storage",
-			"revision": "045fe4d4b03920b9e7d36155c173745079d0bd2e",
-			"revisionTime": "2017-08-30T07:57:44Z"
+			"revision": "0c661d0ca96771709f67b3d9eac10f27033b1f2a",
+			"revisionTime": "2017-09-25T09:20:37Z",
+			"version": "v7.2.3",
+			"versionExact": "v7.2.3"
 		},
 		{
 			"checksumSHA1": "beTNGx1rXgzHQQKZzLDl6WJPafg=",
@@ -729,6 +739,24 @@
 			"path": "gopkg.in/macaron.v1",
 			"revision": "a325110f8b392bce3e5cdeb8c44bf98078ada3be",
 			"revisionTime": "2017-02-13T09:12:08Z"
+		},
+		{
+			"checksumSHA1": "9t2exgz3OI0iupx2XzTY64dTNTI=",
+			"path": "qiniupkg.com/x/bytes.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "TeAfwkuKkelqJ9HJ56Z3sboLxhE=",
+			"path": "qiniupkg.com/x/log.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
+		},
+		{
+			"checksumSHA1": "H8+RHqplH5pNwKVURcANz3Z7+8Y=",
+			"path": "qiniupkg.com/x/reqid.v7",
+			"revision": "946c4a16076d6d98aeb78619e2bd4012357f7228",
+			"revisionTime": "2015-07-21T03:42:11Z"
 		}
 	],
 	"rootPath": "github.com/masami10/grafana"
