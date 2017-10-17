@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/satori/go.uuid"
+
 	"github.com/masami10/grafana/pkg/log"
 	"github.com/qiniu/api.v7/auth/qbox"
 	"github.com/qiniu/api.v7/storage"
@@ -81,17 +83,22 @@ func (u *QiniuUploader) Upload(imageDiskPath string) (string, error) {
 	//	},
 	//}
 
-	//以返回的hash数值作为Key传递
-	err := formUploader.PutFileWithoutKey(context.Background(), &ret, upToken, localFile, nil)
+	key := uuid.NewV4().String() + ".png"
+
+	//上传文件通过key
+	err := formUploader.PutFile(context.Background(), &ret, upToken, key, localFile, nil)
 	if err != nil {
 		return "", err
 	}
 
 	var domain = u.publicDomain
-	if strings.HasPrefix(domain, "https://") != true {
-		domain = "https://" + u.publicDomain
-	}
-	fileUrl := storage.MakePublicURL(domain, ret.Hash) // urlencode 解决URL兼容性问题
+	if strings.HasPrefix(domain, "https://") || strings.HasPrefix(domain, "http://"){
+
+	}else {
+    domain = "http://" + u.publicDomain //默认为http
+  }
+
+	fileUrl := storage.MakePublicURL(domain, ret.Key + "?imageMogr2/thumbnail/536x260") // urlencode 解决URL兼容性问题,增加了缩放图查询语句
 	return fileUrl, nil
 
 }
