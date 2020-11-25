@@ -24,6 +24,31 @@ type LoginCommand struct {
 	Remember bool   `json:"remember"`
 }
 
+type LoginSSOCommand struct {
+	CRCCode string `json:"crcCode" binding:"Required"`
+}
+
+type sucLoginRole struct {
+	RoleCode string `json:"roleCode"`
+	RoleName string `json:"roleName"`
+	RoleDesc string `json:"roleDesc"`
+}
+
+type SUCLoginRespData struct {
+	SecurityToken     string         `json:"securityToken"`
+	PwdExpirationTime int            `json:"pwdExpirationTime"`
+	Roles             []sucLoginRole `json:"roles"`
+	Account           string         `json:"account"`
+	Domain            string         `json:"domain"`
+}
+
+type SUCLoginResp struct {
+	Success bool             `json:"success"`
+	Code    int              `json:"code"`
+	Message string           `json:"message"`
+	Data    SUCLoginRespData `json:"data"`
+}
+
 type CurrentUser struct {
 	IsSignedIn                 bool              `json:"isSignedIn"`
 	Id                         int64             `json:"id"`

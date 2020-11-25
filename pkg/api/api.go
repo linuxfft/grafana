@@ -29,6 +29,7 @@ func (hs *HTTPServer) registerRoutes() {
 	r.Post("/login", quota("session"), bind(dtos.LoginCommand{}), Wrap(hs.LoginPost))
 	r.Get("/login/:name", quota("session"), hs.OAuthLogin)
 	r.Get("/login", hs.LoginView)
+	r.Get("/loginSSO", quota("session"), hs.LoginSSOView)
 	r.Get("/invite/:code", hs.Index)
 
 	// authed views
