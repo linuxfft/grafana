@@ -1,0 +1,29 @@
+name: Package Grafana
+
+on:
+  push:
+    branches:
+      - 'features/suc-sso'
+  release:
+    types: [created]
+
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Get committer details
+        run: |
+          echo Actor: ${{ github.actor }}
+          echo Committed By: ${{ github.event.commits[0].author.name }}
+      - name: checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: docker build & push
+        run: |
+          cd TrainingServer
+          docker build -t docker.pkg.github.com/masami10/curve/grafana:7.2.0_suc_sso --no-cache .
+          docker tag docker.pkg.github.com/masami10/curve/grafana:7.2.0_suc_sso docker.pkg.github.com/masami10/curve/grafana:latest
+          docker login docker.pkg.github.com -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+          docker push docker.pkg.github.com/masami10/curve/grafana:7.2.0_suc_sso
+          docker push docker.pkg.github.com/masami10/curve/grafana:latest
