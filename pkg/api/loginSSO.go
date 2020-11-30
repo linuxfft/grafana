@@ -127,6 +127,11 @@ func (hs *HTTPServer) LoginSSOView(ctx *models.ReqContext ) {
 
 	ssoLogger.Info(fmt.Sprintf("SSO Login With CRC: %s", crccode), ctx)
 
+	if crccode == "" {
+		ssoLogger.Error("Login SSO CRCCode Is Empty")
+		return
+	}
+
 	resp, err := glbClient.doSSOLoginAuth(crccode)
 
 	//resp, err:= mockResp(crccode)
