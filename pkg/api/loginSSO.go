@@ -62,7 +62,7 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 	}
 	body := resp.Body()
 	ssoLogger.Debug("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
-	if err := json.Unmarshal(body, &r); err != nil {x
+	if err := json.Unmarshal(body, &r); err != nil {
 		return r, err
 	}
 	if !r.Success {
