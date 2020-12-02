@@ -61,13 +61,13 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 		return r, err
 	}
 	body := resp.Body()
+	ssoLogger.Info("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
 	if err := json.Unmarshal(body, &r); err != nil {
 		return r, err
 	}
 	if !r.Success {
 		return r, errors.Errorf("Auth Fail, Message: %s, Data: %v", r.Message, r.Data)
 	}
-	ssoLogger.Debug("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
 	return r, nil
 }
 
