@@ -54,15 +54,15 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 		"crcCode": crcCode,
 	}
 	var r dtos.SUCLoginResp
-	url := fmt.Sprintf("%s%s", ENV_SUC_ROOT_URL, "accounts/crcCodeLogin")
+	url := fmt.Sprintf("%s/%s", ENV_SUC_ROOT_URL, "accounts/crcCodeLogin")
 	resp, err := client.R().SetQueryParams(payload).Get(url)
 	if err != nil {
 		ssoLogger.Error("Post Auth Login Error: %s", err.Error())
 		return r, err
 	}
 	body := resp.Body()
-	ssoLogger.Info("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
-	if err := json.Unmarshal(body, &r); err != nil {
+	ssoLogger.Debug("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
+	if err := json.Unmarshal(body, &r); err != nil {x
 		return r, err
 	}
 	if !r.Success {
