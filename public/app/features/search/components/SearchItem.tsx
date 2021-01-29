@@ -43,7 +43,7 @@ export const SearchItem: FC<Props> = ({ item, editable, onToggleChecked, onTagSe
     >
       <SearchCheckbox editable={editable} checked={item.checked} onClick={toggleItem} />
 
-      <a href={item.url} className={styles.link}>
+      <a href={item.url} className={styles.link} target="_blank">
         <div className={styles.body}>
           <span>{item.title}</span>
           <span className={styles.folderTitle}>{item.folderTitle}</span>

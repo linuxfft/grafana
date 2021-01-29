@@ -51,7 +51,7 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 
 	//payload := sucLoginAuthReq{Domain: "local", Account: username, Password: password}
 	payload := map[string]string{
-		"crcCode": crcCode,
+		"code": crcCode,
 	}
 	var r dtos.SUCLoginResp
 	url := fmt.Sprintf("%s/%s", ENV_SUC_ROOT_URL, "accounts/crcCodeLogin")
