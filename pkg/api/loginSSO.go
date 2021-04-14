@@ -3,9 +3,10 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/grafana/grafana/pkg/setting"
 	"os"
 	"time"
+
+	"github.com/grafana/grafana/pkg/setting"
 
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
@@ -61,7 +62,7 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 		return r, err
 	}
 	body := resp.Body()
-	ssoLogger.Debug("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body))
+	ssoLogger.Debug(fmt.Sprintf("Do Auth Login, Resp: Status Code %d, Data: %s", resp.StatusCode(), string(body)))
 	if err := json.Unmarshal(body, &r); err != nil {
 		return r, err
 	}
@@ -71,12 +72,12 @@ func (c *httpClient) doSSOLoginAuth(crcCode string) (dtos.SUCLoginResp, error) {
 	return r, nil
 }
 
-func mockResp(cc string) (dtos.SUCLoginResp, error ){
-	return dtos.SUCLoginResp {
+func mockResp(cc string) (dtos.SUCLoginResp, error) {
+	return dtos.SUCLoginResp{
 		Message: "ok",
-		Data: dtos.SUCLoginRespData {
+		Data: dtos.SUCLoginRespData{
 			Account: "123124214142",
-			Domain: "222",
+			Domain:  "222",
 		},
 		Success: true,
 	}, nil
@@ -120,12 +121,12 @@ func ssoSyncUser(
 	return cmd.Result, nil
 }
 
-func (hs *HTTPServer) LoginSSOView(ctx *models.ReqContext ) {
+func (hs *HTTPServer) LoginSSOView(ctx *models.ReqContext) {
 	var user *models.User
 
 	crccode := ctx.Req.URL.Query().Get("crccode")
 
-	ssoLogger.Info(fmt.Sprintf("SSO Login With CRC: %s", crccode), ctx)
+	ssoLogger.Info("SSO Login With CRC", crccode)
 
 	if crccode == "" {
 		ssoLogger.Error("Login SSO CRCCode Is Empty")
