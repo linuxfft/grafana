@@ -12,10 +12,6 @@ jobs:
   release:
     runs-on: ubuntu-20.04
     steps:
-      - name: Get committer details
-        run: |
-          echo Actor: ${{ github.actor }}
-          echo Committed By: ${{ github.event.commits[0].author.name }}
       - name: checkout code
         uses: actions/checkout@v2
         with:
