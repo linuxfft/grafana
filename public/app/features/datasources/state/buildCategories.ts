@@ -142,7 +142,7 @@ function getGrafanaCloudPhantomPlugin(): DataSourcePluginMeta {
     baseUrl: '',
     info: {
       description: 'Hosted Graphite, Prometheus and Loki',
-      logos: { small: 'public/img/grafana_icon.svg', large: 'asd' },
+      logos: { small: 'public/img/pin.png', large: 'asd' },
       author: { name: 'Grafana Labs' },
       links: [
         {

@@ -270,7 +270,7 @@ func (sn *SlackNotifier) Notify(evalContext *alerting.EvalContext) error {
 		"fallback":    evalContext.GetNotificationTitle(),
 		"fields":      fields,
 		"footer":      "Grafana v" + setting.BuildVersion,
-		"footer_icon": "https://grafana.com/assets/img/fav32.png",
+		"footer_icon": "public/img/pin.png",
 		"ts":          time.Now().Unix(),
 	}
 	if sn.NeedsImage() && imageURL != "" {
