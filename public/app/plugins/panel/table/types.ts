@@ -4,6 +4,8 @@ export interface Options {
   frameIndex: number;
   showHeader: boolean;
   sortBy?: TableSortByFieldState[];
+  autoScroll?: boolean;
+  scrollInterval?: number;
 }
 
 export interface TableSortBy {
