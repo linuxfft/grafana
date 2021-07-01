@@ -15,6 +15,8 @@ export interface PanelOptions {
   frameIndex: number;
   showHeader: boolean;
   sortBy?: TableSortByFieldState[];
+  autoScroll?: boolean;
+  scrollInterval?: number;
 }
 
 export const defaultPanelOptions: PanelOptions = {

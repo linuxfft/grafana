@@ -91,6 +91,8 @@ export class TablePanel extends Component<Props> {
         onSortByChange={this.onSortByChange}
         onColumnResize={this.onColumnResize}
         onCellFilterAdded={this.onCellFilterAdded}
+        autoScroll={options.autoScroll}
+        scrollInterval={options.scrollInterval}
       />
     );
   }

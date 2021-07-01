@@ -63,10 +63,28 @@ export const plugin = new PanelPlugin<PanelOptions, PanelFieldConfig>(TablePanel
     },
   })
   .setPanelOptions((builder) => {
-    builder.addBooleanSwitch({
-      path: 'showHeader',
-      name: 'Show header',
-      description: "To display table's header or not to display",
-      defaultValue: defaultPanelOptions.showHeader,
-    });
+    builder
+      .addBooleanSwitch({
+        path: 'showHeader',
+        name: 'Show header',
+        description: "To display table's header or not to display",
+        defaultValue: defaultPanelOptions.showHeader,
+      })
+      .addBooleanSwitch({
+        path: 'autoScroll',
+        name: 'Auto Scroll',
+        description: 'Enables/disables auto scroll in table',
+        defaultValue: false,
+      })
+      .addNumberInput({
+        path: 'scrollInterval',
+        name: 'Auto Scroll Interval',
+        settings: {
+          placeholder: '1000',
+          integer: true,
+        },
+        showIf: function showIf(options) {
+          return options.autoScroll;
+        },
+      });
   });

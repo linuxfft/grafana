@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback, useMemo } from 'react';
+import React, { FC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { DataFrame, Field, getFieldDisplayName } from '@grafana/data';
 import {
   Cell,
@@ -41,10 +41,12 @@ export interface Props {
   columnMinWidth?: number;
   noHeader?: boolean;
   resizable?: boolean;
+  autoScroll?: boolean;
   initialSortBy?: TableSortByFieldState[];
   onColumnResize?: TableColumnResizeActionCallback;
   onSortByChange?: TableSortByActionCallback;
   onCellFilterAdded?: TableFilterActionCallback;
+  scrollInterval?: number;
 }
 
 interface ReactTableInternalState extends UseResizeColumnsState<{}>, UseSortByState<{}>, UseFiltersState<{}> {}
@@ -124,6 +126,8 @@ export const Table: FC<Props> = memo((props: Props) => {
     noHeader,
     resizable = true,
     initialSortBy,
+    autoScroll = false,
+    scrollInterval = 1000,
   } = props;
   const tableStyles = useStyles2(getTableStyles);
 
@@ -167,6 +171,33 @@ export const Table: FC<Props> = memo((props: Props) => {
     useAbsoluteLayout,
     useResizeColumns
   );
+  const listRef = useRef(null);
+  const [scrollIdx, setScrollIdx] = useState(0);
+
+  useEffect(() => {
+    let it: any = null;
+    if (autoScroll) {
+      it = setInterval(() => {
+        setScrollIdx(s => s + 1);
+      }, scrollInterval);
+    }
+    if (it) {
+      return () => clearInterval(it);
+    }
+    return;
+  }, [autoScroll, scrollInterval]);
+  const listCurrent = listRef && listRef.current;
+  const rowLength = rows.length;
+  useEffect(() => {
+    if (autoScroll && listCurrent) {
+      if (scrollIdx < rowLength - 1) {
+        // @ts-ignore
+        listCurrent.scrollToItem(scrollIdx, 'start');
+      } else {
+        setScrollIdx(0);
+      }
+    }
+  }, [autoScroll, listCurrent, scrollIdx, rowLength]);
 
   const { fields } = data;
 
@@ -220,6 +251,7 @@ export const Table: FC<Props> = memo((props: Props) => {
           )}
           {rows.length > 0 ? (
             <FixedSizeList
+              ref={listRef}
               height={height - headerHeight}
               itemCount={rows.length}
               itemSize={tableStyles.rowHeight}
