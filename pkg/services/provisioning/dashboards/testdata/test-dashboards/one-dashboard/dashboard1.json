@@ -24,7 +24,7 @@
         ]
       },
       {
-        "title": "Welcome to Grafana",
+        "title": "Welcome to Leetx",
         "height": "210px",
         "collapse": false,
         "editable": true,
@@ -170,4 +170,3 @@
     },
     "version": 5
   }
-  
