@@ -11,7 +11,7 @@ This page lists resources for developers who want to contribute to the Grafana s
 ##
 General resources
 These resources are useful for all developers.
-
+d
 * [Contributing to Grafana](https://github.com/grafana/grafana/blob/master/CONTRIBUTING.md): Start here to learn how you can contribute your skills to make Grafana even better.
 
 * [Developer guide](https://github.com/grafana/grafana/blob/master/contribute/developer-guide.md): A guide to help you get started developing Grafana software, includes instructions for how to configure Grafana for development.
