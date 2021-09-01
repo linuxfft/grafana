@@ -1329,7 +1329,7 @@ var expNotifications = map[string][]string{
 			  "text": "Integration Test ",
 			  "fallback": "Integration Test [FIRING:1] SlackAlert1 ",
 			  "footer": "Grafana v",
-			  "footer_icon": "https://grafana.com/assets/img/fav32.png",
+			  "footer_icon": "https://grafana.com/assets/img/上汽集团_logo.svg",
 			  "color": "#D63232",
 			  "ts": %s
 			}
@@ -1356,7 +1356,7 @@ var expNotifications = map[string][]string{
 			  "text": "**Firing**\n\nLabels:\n - alertname = SlackAlert2\nAnnotations:\nSource: http://localhost:3000/alerting/UID_SlackAlert2/edit\nSilence: http://localhost:3000/alerting/silence/new?alertmanager=grafana&matchers=alertname%%3DSlackAlert2\n",
 			  "fallback": "[FIRING:1] SlackAlert2 ",
 			  "footer": "Grafana v",
-			  "footer_icon": "https://grafana.com/assets/img/fav32.png",
+			  "footer_icon": "https://grafana.com/assets/img/上汽集团_logo.svg",
 			  "color": "#D63232",
 			  "ts": %s
 			}
@@ -1483,7 +1483,7 @@ var expNotifications = map[string][]string{
 			{
 			  "color": 14037554,
 			  "footer": {
-				"icon_url": "https://grafana.com/assets/img/fav32.png",
+				"icon_url": "https://grafana.com/assets/img/上汽集团_logo.svg",
 				"text": "Grafana v"
 			  },
 			  "title": "[FIRING:1] DiscordAlert ",

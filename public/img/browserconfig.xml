@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="public/img/pin.png"/>
+            <square150x150logo src="public/img/上汽集团_logo.svg"/>
             <TileColor>#2b5797</TileColor>
         </tile>
     </msapplication>

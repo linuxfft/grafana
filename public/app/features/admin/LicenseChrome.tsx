@@ -55,7 +55,7 @@ export const LicenseChrome: React.FC<Props> = ({ header, editionNotice, subheade
           }}
         >
           <img
-            src="public/img/pin.png"
+            src="public/img/上汽集团_logo.svg"
             alt="Grafana"
             width="80px"
             style={{ position: 'absolute', left: '23px', top: '20px' }}

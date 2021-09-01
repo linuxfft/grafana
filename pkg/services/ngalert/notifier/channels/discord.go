@@ -77,7 +77,7 @@ func (d DiscordNotifier) Notify(ctx context.Context, as ...*types.Alert) (bool, 
 
 	footer := map[string]interface{}{
 		"text":     "Grafana v" + setting.BuildVersion,
-		"icon_url": "https://grafana.com/assets/img/fav32.png",
+		"icon_url": "https://grafana.com/assets/img/上汽集团_logo.svg",
 	}
 
 	embed := simplejson.New()

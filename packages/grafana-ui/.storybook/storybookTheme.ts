@@ -37,7 +37,7 @@ const createStorybookTheme = (theme: GrafanaTheme2) => {
 
     brandTitle: 'Grafana UI',
     brandUrl: './',
-    brandImage: 'public/img/grafana_icon.svg',
+    brandImage: 'public/img/上汽集团_logo.svg',
   });
 };
 

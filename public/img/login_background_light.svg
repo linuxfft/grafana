@@ -33,7 +33,7 @@
 	</foreignObject>
 	<g i:extraneous="self">
 		<g id="Layer_1">
-			
+
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-5414.2188" y1="1834.6327" x2="-4672.6523" y2="1834.6327" gradientTransform="matrix(0.9982 -5.970186e-02 5.970186e-02 0.9982 5887.2866 -935.2268)">
 				<stop  offset="0.1587" style="stop-color:#FFFFFF;stop-opacity:0"/>
 				<stop  offset="1" style="stop-color:#E8ECEE"/>
@@ -46,14 +46,14 @@
 				c-80.2,4.8-153.7,40.5-207,100.6c-53.3,60.1-80,137.4-75.2,217.6c4.8,80.2,40.5,153.7,100.6,207c55.5,49.2,125.6,75.8,199.2,75.8
 				c6.1,0,12.2-0.2,18.4-0.5c80.2-4.8,153.7-40.5,207-100.6c53.3-60.1,80-137.4,75.2-217.6c-4.8-80.2-40.5-153.7-100.6-207
 				C1106.5,923,1036.3,896.4,962.8,896.4z"/>
-			
+
 				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1972.6976" y1="-3346.2129" x2="-374.5752" y2="-3346.2129" gradientTransform="matrix(9.127419e-02 0.9958 -0.9958 9.127419e-02 -1399.111 1909.2017)">
 				<stop  offset="0.1587" style="stop-color:#FFFFFF;stop-opacity:0"/>
 				<stop  offset="0.768" style="stop-color:#F0F3F5"/>
 			</linearGradient>
 			<circle class="st1" cx="1805.2" cy="207.8" r="489.5"/>
 			<g>
-				
+
 					<image style="overflow:visible;" width="1141" height="1141" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABHYAAAR2CAYAAABZMTCAAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAABVZRJREFUeNrsnV1y6zqwXpvyHUEq
 D5n/6PKQyhDMVCr3JI4OAfQvAJJrVe3aNkXJtkTRxHL31yIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1343,7 +1343,7 @@ ZLeo2q8iFTsV0TOrQucJrVedUify2kDqAGIH4Mvlzghv9U5Xa9ZhuSoelQSK/py7nB3FtCwzXfXO
 lejxHM9RvkXwdEoeBA8AMmfW/c4WOpUx5tk8nVkByZUqHfX0q1kVOxHxE839GbVeeR9XhdDpljqe
 y0gdQOwAIHdCwmdUvXMldd6lRKQ1Kyp0VLk5yiBlM+20rLvqnTPRc1XFcxesPJI8mWDlHQTP1THm
 ETwZydNZxYPoAUDmqO/7KO7zdKETkTlmsYBkZZVOV/vVYfvl53jbrVZU6UTkoFLqKF6XSB1A7ABy
-B7lTrt65kjxni/GfoIT5EQmbrASKTsu6a8vyVO/83eZpy/q1+Dj0jLzZVfBktleETXc7Fe1aAIgc
+B7lTrt65kjxni/GfoIT5EQmbrASKTsu6a8vyVO/83eZpy/q1+Dj0jLzZVfBktQCOSc7Fe1aAIgc
 xf2r83O6hU5U5HjFjrJaxzMBK5IDoxY6K0edZyZzRWROtkrn1+Itd1fHTqfUOQKvX6QOIHYAvlDu
 RDgTPJnqHe/lkezpOjmOhicrcneiYcpXl71j0SvtWZXKHY/gUUzNOm7E4Z3gMeup4kHyACBzdrn/
 jiqAVUInI3HM5rZedVTprJiAtUuOTrRKJyp0olVbUZmzldQBQOwAcudZcuduQZ2RPR7B463eGYkd

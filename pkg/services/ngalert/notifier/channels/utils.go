@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	FooterIconURL      = "https://grafana.com/assets/img/fav32.png"
+	FooterIconURL      = "https://grafana.com/assets/img/上汽集团_logo.svg"
 	ColorAlertFiring   = "#D63232"
 	ColorAlertResolved = "#36a64f"
 )

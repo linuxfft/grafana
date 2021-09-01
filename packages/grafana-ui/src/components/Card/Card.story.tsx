@@ -8,7 +8,7 @@ import { IconButton } from '../IconButton/IconButton';
 import { TagList } from '../Tags/TagList';
 import { VerticalGroup } from '../Layout/Layout';
 
-const logo = 'https://grafana.com/static/assets/img/apple-touch-icon.png';
+const logo = 'https://grafana.com/static/assets/img/上汽集团_logo.svg';
 
 export default {
   title: 'General/Card',

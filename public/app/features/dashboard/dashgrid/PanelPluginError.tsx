@@ -74,7 +74,7 @@ export function getPanelPluginNotFound(id: string, silent?: boolean): PanelPlugi
       links: [],
       logos: {
         large: '',
-        small: 'public/img/grafana_icon.svg',
+        small: 'public/img/上汽集团_logo.svg',
       },
       screenshots: [],
       updated: '',

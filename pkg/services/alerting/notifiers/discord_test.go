@@ -28,7 +28,7 @@ func TestDiscordNotifier(t *testing.T) {
 			Convey("settings should trigger incident", func() {
 				json := `
 				{
-					"avatar_url": "https://grafana.com/img/fav32.png",
+					"avatar_url": "https://grafana.com/img/上汽集团_logo.svg",
 					"content": "@everyone Please check this notification",
 					"url": "https://web.hook/"
 				}`
@@ -46,7 +46,7 @@ func TestDiscordNotifier(t *testing.T) {
 				So(err, ShouldBeNil)
 				So(discordNotifier.Name, ShouldEqual, "discord_testing")
 				So(discordNotifier.Type, ShouldEqual, "discord")
-				So(discordNotifier.AvatarURL, ShouldEqual, "https://grafana.com/img/fav32.png")
+				So(discordNotifier.AvatarURL, ShouldEqual, "https://grafana.com/img/上汽集团_logo.svg")
 				So(discordNotifier.Content, ShouldEqual, "@everyone Please check this notification")
 				So(discordNotifier.WebhookURL, ShouldEqual, "https://web.hook/")
 			})

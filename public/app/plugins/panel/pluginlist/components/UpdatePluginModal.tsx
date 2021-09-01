@@ -26,7 +26,7 @@ export function UpdatePluginModal({ pluginName, pluginID, onDismiss }: Props) {
         </span>
       </div>
       <p className={styles.updateAllTip}>
-        <img className={styles.inlineLogo} src="public/img/grafana_icon.svg" />
+        <img className={styles.inlineLogo} src="public/img/上汽集团_logo.svg" />
         <strong>Pro tip</strong>: To update all plugins at once, type{' '}
         <code className={styles.codeSmall}>grafana-cli plugins update-all</code> on the command line.
       </p>
