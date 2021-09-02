@@ -20,6 +20,6 @@ jobs:
         run: |
           docker build -t docker.pkg.github.com/masami10/curve/grafana:8.0.3_suc_sso --no-cache .
           docker tag docker.pkg.github.com/masami10/curve/grafana:8.0.3_suc_sso docker.pkg.github.com/masami10/curve/grafana:latest
-          docker login docker.pkg.github.com -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+          docker login docker.pkg.github.com -u masami10 -p ${{ secrets.GRAFANA_CURVE }}
           docker push docker.pkg.github.com/masami10/curve/grafana:8.0.3_suc_sso
           docker push docker.pkg.github.com/masami10/curve/grafana:latest
