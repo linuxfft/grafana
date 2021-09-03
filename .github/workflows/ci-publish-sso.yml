@@ -20,6 +20,6 @@ jobs:
         run: |
           docker build -t ghcr.io/masami10/curve/grafana:8.0.3_suc_sso --no-cache .
           docker tag ghcr.io/masami10/curve/grafana:8.0.3_suc_sso ghcr.io/masami10/curve/grafana:latest
-          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GRAFANA_CURVE }}
+          docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.GRAFANA_CURVE }}
           docker push ghcr.io/masami10/curve/grafana:8.0.3_suc_sso
           docker push ghcr.io/masami10/curve/grafana:latest
