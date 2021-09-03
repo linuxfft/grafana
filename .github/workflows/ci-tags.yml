@@ -15,8 +15,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: docker build & push
         run: |
-          docker build -t docker.pkg.github.com/masami10/curve/grafana:${GITHUB_REF##*/} --no-cache .
-          docker tag docker.pkg.github.com/masami10/curve/grafana:${GITHUB_REF##*/} docker.pkg.github.com/masami10/curve/grafana:latest
-          docker login docker.pkg.github.com -u masami10 -p ${{ secrets.GRAFANA_CURVE }}
-          docker push docker.pkg.github.com/masami10/curve/grafana:${GITHUB_REF##*/}
-          docker push docker.pkg.github.com/masami10/curve/grafana:latest
+          docker build -t ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/} --no-cache .
+          docker tag ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/} ghcr.io/masami10/curve/grafana:latest
+          docker login ghcr.io -u masami10 -p ${{ secrets.GRAFANA_CURVE }}
+          docker push ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/}
+          docker push ghcr.io/masami10/curve/grafana:latest
