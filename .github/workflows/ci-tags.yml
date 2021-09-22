@@ -1,0 +1,22 @@
+name: Package Grafana
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: docker build & push
+        run: |
+          docker build -t ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/} --no-cache .
+          docker tag ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/} ghcr.io/masami10/curve/grafana:latest
+          docker login ghcr.io -u masami10 -p ${{ secrets.GRAFANA_CURVE }}
+          docker push ghcr.io/masami10/curve/grafana:${GITHUB_REF##*/}
+          docker push ghcr.io/masami10/curve/grafana:latest
