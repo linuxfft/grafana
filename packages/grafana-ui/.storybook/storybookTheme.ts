@@ -39,7 +39,7 @@ const createTheme = (theme: GrafanaTheme) => {
 
     brandTitle: 'Grafana UI',
     brandUrl: './',
-    brandImage: './pin.png',
+    brandImage: './上汽集团_logo.svg',
   });
 };
 

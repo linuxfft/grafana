@@ -405,8 +405,8 @@ func (hs *HTTPServer) setIndexViewData(c *models.ReqContext) (*dtos.IndexViewDat
 		NewGrafanaVersionExists: plugins.GrafanaHasUpdate,
 		AppName:                 setting.ApplicationName,
 		AppNameBodyClass:        getAppNameBodyClass(hs.License.HasValidLicense()),
-		FavIcon:                 "public/img/pin.png",
-		AppleTouchIcon:          "public/img/apple-touch-icon.png",
+		FavIcon:                 "public/img/上汽集团_logo.svg",
+		AppleTouchIcon:          "public/img/上汽集团_logo.svg",
 		AppTitle:                "Grafana",
 		NavTree:                 navTree,
 	}
