@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="public/img/上汽集团_logo.svg"/>
+            <square150x150logo src="public/img/上汽集团_logo_original.svg"/>
             <TileColor>#2b5797</TileColor>
         </tile>
     </msapplication>
