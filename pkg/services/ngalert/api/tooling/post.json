@@ -608,6 +608,9 @@
      "description": "Error is a property to be set if the corresponding DataQuery has an error.",
      "type": "string"
     },
+    "ErrorSource": {
+     "$ref": "#/definitions/ErrorSource"
+    },
     "Frames": {
      "$ref": "#/definitions/Frames"
     },
@@ -812,6 +815,10 @@
     }
    },
    "type": "object"
+  },
+  "ErrorSource": {
+   "description": "ErrorSource type defines the source of the error",
+   "type": "string"
   },
   "ErrorType": {
    "title": "ErrorType models the different API error types.",
@@ -4146,7 +4153,6 @@
    "type": "object"
   },
   "alertGroups": {
-   "description": "AlertGroups alert groups",
    "items": {
     "$ref": "#/definitions/alertGroup"
    },
@@ -4307,7 +4313,6 @@
    "type": "object"
   },
   "gettableAlerts": {
-   "description": "GettableAlerts gettable alerts",
    "items": {
     "$ref": "#/definitions/gettableAlert"
    },
@@ -4369,7 +4374,6 @@
    "type": "array"
   },
   "integration": {
-   "description": "Integration integration",
    "properties": {
     "lastNotifyAttempt": {
      "description": "A timestamp indicating the last attempt to deliver a notification regardless of the outcome.\nFormat: date-time",
